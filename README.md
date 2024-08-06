@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Overview
+
+This project demonstrates how to integrate Stripe Payment Elements into a Next.js 14 application. The application sets up a secure payment form, handles user input, and processes payments securely. The focus is on leveraging HTTPS and ensuring secure transactions.
+
+![1722938659332](image/README/1722938659332.png)![1722938687564](image/README/1722938687564.png)
+
+## Features
+
+- **Secure Payment Form**: Utilizes Stripe's Payment Elements for a seamless payment experience.
+- **HTTPS Setup**: Ensures secure communication between the client and server.
+- **Environment Configurations**: Securely manages sensitive data using environment variables.
+- **Error Handling**: Provides robust error handling during payment processing.
+- **Deployment Ready**: Configured for deployment on platforms like Vercel or Netlify.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v14+)
+- Next.js (v14)
+- Stripe Account
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   git clone https://github.com/liuyuelintop/stripe-payment-elements-with-https-nextjs-14-demo-study.git
+   cd stripe-payment-elements-with-https-nextjs-14-demo-study
+   ```
 
-## Learn More
+2. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Set up environment variables:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   Create a `.env.local` file in the root directory and add your Stripe keys:
 
-## Deploy on Vercel
+   ```bash
+   NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your_public_key
+   STRIPE_SECRET_KEY=your_secret_key
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   npm run dev
+   ```
+
+   The application will be available at `http://localhost:3000`.
+
+## Deployment
+
+The project can be deployed using any platform that supports Next.js, such as Vercel or Netlify. Ensure that the environment variables are set up correctly in the hosting environment.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- [Stripe Documentation](https://stripe.com/docs)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Sonny Sangha&#39;s Stripe Integration Guide](https://www.youtube.com/watch?v=fgbEwVWlpsI)
+
+## Additional Resources
+
+- [Stripe Payment Elements Documentation](https://stripe.com/docs/payments/elements)
+- [Next.js with HTTPS Guide](https://nextjs.org/docs/advanced-features/security-headers)
+
+---
+
+This README provides a comprehensive overview of the project, ensuring that new contributors and users can understand and set up the project efficiently.
